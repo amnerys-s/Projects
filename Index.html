@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Responsive design</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <!--header-->
+       <header>
+            <h1 class="Logo">Planetarium</h1>
+           <nav >
+               <a href="#" class="hide-desktop">
+                   <img src="Images/icons8-menu-vertical-50.png" alt="toggle-menu" class="menu" id="menu">
+               </a>
+             <ul class="show-desktop hide-mobile" id="nav" >
+                 <li class="btn-exit hide-desktop" id="exit" ><img src="/Images/icons8-close-window-24.png" alt="Exit-btn"></li>
+                 <li class="links">Home</li>
+                 <li class="links">Home</li>
+                 <li class="links">Home</li>
+                 <li class="links">Home</li>
+             </ul>
+
+           </nav>
+       </header>
+<!--content-->
+       <main>
+            <div class="main">
+               
+                    <img src="/Images/lime-sign-in.png" alt="Vetor-icon" class="vector">
+               
+                <div class="contenedor">
+                    <h2 class="title">Learn. Discover. Create</h2>
+                    <span class="barra">...</span>
+                </div>
+
+                <div class="parrafo">
+                    <p class="texto">Lorem ipsum dolor sit amet, consectetu
+                        adipiscing elit. Sed interdum pulvinar ultrices nunc.
+                        In dictumst quisque sit adipiscing rutrum ut. Augue mattis at 
+                        quam morbi tristique faucibus et, aliquam turpis. Ut a nunc amet, aliquet scelerisque non amet adipiscing congue.</p>
+                </div>
+                
+            
+
+               
+         </div>
+            
+           
+       </main>
+      <script>
+          var menu = document.getElementById('menu');
+          var nav = document.getElementById('nav');
+          var exit = document.getElementById('exit');
+
+          menu.addEventListener('click', function(e){
+              nav.classList.toggle('hide-mobile');
+              e.preventDefault();
+          });
+
+          exit.addEventListener('click', function(e){
+              nav.classList.add('hide-mobile');
+              e.preventDefault();
+          });
+      </script>
+           
+    </body>
+</html>
